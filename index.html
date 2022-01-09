@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<title>DYM</title>
+<meta charset="utf-8">
+
+<style>
+html
+  { font: 22pt 'Helvetica Neue', sans-serif }
+*
+  { margin: 0
+  ; padding: 0
+  ; line-height: 1.5em
+  ; color: #000
+  ; text-decoration: none
+  }
+body
+  { background: #f2f2f2
+  ; min-width: 320px
+  }
+p
+  { margin-left: 1em
+  ; font-size: 0.85rem
+  }
+h1
+  { text-align: center
+  ; margin-top: 16%
+  ; font-size: 3rem
+  ; line-height: 3rem
+  ; font-weight: bold
+  }
+h1 a:after
+  { content: ''
+  ; display: block
+  ; border-top: 0.4rem solid black
+  ; background: #f2f2f2
+  ; width: 2.2em
+  ; height: 0.3rem
+  ; margin: -0.6rem auto
+  }
+h1 a:active:after,
+h1 a:focus:after,
+h1 a:hover:after
+  { background: black }
+nav
+  { min-width: 10em
+  ; display: block
+  ; margin: 0 auto
+  }
+menu
+  { margin-top: 1.9em
+  ; padding-bottom: 2rem
+  }
+menu li
+  { list-style: none
+  ; text-align: center
+  }
+menu a
+  { font-size: 1.2rem
+  ; font-weight: bold
+  ; padding: 0.3em
+  ; display: block
+  ; width: 6rem
+  ; margin: 0 auto
+  }
+menu a:active,
+menu a:focus,
+menu a:hover
+  { background: #000
+  ; color: #f2f2f2
+  }
+
+section,
+article
+  { display: none
+  ; border-top: 0.15em solid #000
+  ; padding: 2rem 0 5vw 0
+  ; margin: 0 4vw 0 4vw
+  }
+section:target,
+article
+  { display: block }
+h3
+  { margin-top: 0.6rem
+  ; font-size: 1.1rem
+  }
+ul
+  { margin: 1em 2em }
+img,
+pre
+  { max-width: 99%
+  ; width: auto
+  ; border: 0.5vw solid black
+  }
+code
+  { display: inline-block }
+p a
+  { text-decoration: underline }
+
+/* section p:last-child
+  { padding-top: 3em
+  ; margin-left: 0
+  ; font-size: 0.5em
+  } */
+
+.titles
+  { list-style: none
+  ; font-weight: bold
+  ; margin: 0
+  }
+.titles a:active,
+.titles a:focus,
+.titles a:hover
+  { border-bottom: 0.15rem solid black }
+.titles li
+  { margin-bottom: 0.25rem }
+
+.gallery
+  { margin: 0
+  ; list-style: none
+  }
+.gallery li:not(:last-child)
+  { margin-bottom: 2.5vw }
+.gallery a
+  { font-weight: bold
+  ; padding: 0.5em 0.75em
+  ; height: 170px
+  ; border: 0.5vw solid black
+  ; display: block
+  }
+
+article
+  { border: none }
+article > *
+  { margin: 2.5vw auto }
+article h1
+  { margin-top: 6%
+  ; margin-bottom: 1.5em
+  }
+article .gallery li
+  { text-align: center }
+
+@media (min-width: 641px) {
+  body
+    { display: flex }
+  nav
+    { flex: 1 }
+  section,
+  article
+    { border-top: 0
+    ; border-left: 0.15em solid #000
+    ; padding: 0.75em 1.7em
+    ; margin: 1em 0
+    ; min-height: 13em
+    ; flex: 99
+    }
+  section > img:first-child
+    { margin-top: 0.28rem }
+  article
+    { border: none }
+  img,
+  pre
+    { border: 2px solid black }
+
+  .gallery li:first-child
+    { margin-top: 0.25rem }
+  .gallery a
+    { border: 2px solid black
+    ; font-size: 1.05rem
+    }
+}
+</style>
+
+<nav>
+  <h1><a href="#about">DYM</a></h1>
+  <menu>
+    <li><a href="#code">CODE</a>
+    <li><a href="#pixels">PIXELS</a>
+    <li><a href="#fun">F.u.N.</a>
+  </menu>
+</nav>
+
+<section id="about">
+  <img alt="DYM" src="photo.png">
+
+  <h3>Interests</h3>
+  <p>Cyberpunk, Retrofuture, Absurd, Minimalism, New Aesthetics</p>
+
+  <h3>About</h3>
+  <p>Only limited by the construct of time and necessity to sleep</p>
+
+  <h3>CV.pdf</h3>
+  <p><a href="cv/resume.pdf">ENG</a>,
+     <a href="cv/lebenslauf.pdf">DEU</a>,
+     <a href="cv/zeugnisse.pdf">certificates</a>
+  </p>
+
+  <h3>Networking</h3>
+  <p><a href="https://twitter.com/dym_sh">twitter</a>,
+     <a href="https://instagram.com/dym_sh">instagram</a>
+     <a href="https://github.com/dym-sh">github</a>,
+  </p>
+
+  <h3>Direct Line</h3>
+  <p><a href="mailto:re@dym.sh">email</a>,
+     <a href="tel:+555 000 000 000">tel</a>
+  </p>
+</section>
+
+<section id="code">
+  <ul class="titles">
+    <li><a href="https://github.com/dym-sh/site">site (this one)</a>
+    <li><a href="https://github.com/dym-sh/site-express">express.js blog made from scratch</a>
+    <li><a href="https://github.com/dym-sh/CyrPhMac">Cyrillic Phonetic (Mac) Keyboard Layout for Windows</a>
+    <li><a href="https://github.com/dym-sh/server-setup">node.js + git --push-to-production</a>
+    <li><a href="https://github.com/dym-sh/mac-reinstall.sh">mac-reinstall.sh</a>
+    <li><a href="https://github.com/dym-sh/cycloide.pde">cycloide.pde</a>
+    <li><a href="css-bee/">css-bee (incl. key-frames animation)</a>
+    <li><a href="https://dym.mit-license.org">hipster-gray.css (responsive design)</a>
+    <li><a href="https://github.com/dym-sh/dotfiles">dotfiles</a>
+  </ul>
+</section>
+
+<section id="pixels">
+  <ul class="gallery">
+    <li><a href="web/" style="background:url('web/index.png')">WEB</a>
+    <li><a href="identity/" style="background:url('identity/index.png')">identity</a>
+    <li><a href="posters/" style="background:url('posters/index.png')">posters</a>
+    <li><a href="portfolio-2009/" style="background:url('portfolio-2009/index.png')">Portfolio (2009)</a>
+    <li><a href="scra/" style="background:url('scra/index.png')">SCRA</a>
+    <li><a href="pixel-story/" style="background:url('pixel-story/index.png')">pixel story</a>
+    <li><a href="drops/" style="background:url('drops/index.png')">Drops</a>
+    <li><a href="matrix-reflex/" style="background:url('matrix-reflex/index.png')">matrix-reflex</a>
+    <li><a href="cycloide/" style="background:url('cycloide/index.png')">Cycloide</a>
+  </ul>
+</section>
+
+<section id="fun">
+  <ul class="gallery">
+    <li><a href="stuff/" style="background:url('stuff/index.png')">stuff</a>
+    <li><a href="sketch-a-day/" style="background:url('sketch-a-day/index.png')">Sketch-a-Day</a>
+    <li><a href="hourly-comic-day-2012/" style="background:url('hourly-comic-day-2012/index.png')">Hourly Comic Day (2012)</a>
+    <li><a href="sequence/" style="background:url('sequence/index.png')">Sequence</a>
+  </ul>
+</section>
