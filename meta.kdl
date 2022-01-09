@@ -1,0 +1,11 @@
+name  "Homepage ’14"
+slag  "homepage-2014"
+tags  "css"  "homepage"  "self"
+homepage  "https://dym.sh/homepage-2014"
+
+
+mirrors {
+  codepen  "https://codepen.io/dym-sh/pen/ExwemaX"
+  github  "https://github.com/dym-sh/homepage-2014"
+  gitlab  "https://gitlab.com/dym-sh/homepage-2014"
+}
